@@ -1,0 +1,65 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: white;
+}
+
+.emoji {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.icon {
+    font-size: 4rem;
+    text-align: center;
+    order: 1; /* emoji comes first */
+    margin-bottom: 20px; 
+}
+
+.emoji h2 {
+    margin: 0;
+    border-bottom: 2px solid #ccc;
+    order: 2; /* subheading comes second */
+}
+
+.emoji p {
+    margin: 10px 0;
+    text-align: left;
+    order: 3; /* paragraph comes third */
+}
+
+.emoji a {
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 100%;
+    text-align: left;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+    align-self: flex-end;
+    order: 4; /* button comes last */
+}
+
+h1 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.emojis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* could not find out how to arrange items top to bottom wihtout using the order property as without it it would just break. also not sure if emojis are dependant on client but im pretty sure that they are just different on my side. note that i am also unsire if i should add a wrapper, as in the screenshot it either does or the browser is slimmed down.*/
